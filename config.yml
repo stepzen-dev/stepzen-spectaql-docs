@@ -1,0 +1,24 @@
+spectaql:
+  logoFile: ./logo.svg
+
+introspection:
+  url: '{{stepzen_api_endpoint}}'
+  headers:
+    Authorization: 'apikey {{stepzen_api_key}}'
+
+info:
+  title: StepZen - OpenWeatherMap GraphQL API
+  description:
+    'Access current weather data for any location on Earth including over 200,000 cities. Using GraphQL!
+
+
+    [View GraphiQL playground](http://localhost:5000/api/weatherreport)'
+  contact:
+    name: StepZen Support
+    url: https://stepzen.com/docs
+    email: support@stepzen.com
+
+servers:
+  - url: '{{stepzen_api_endpoint}}'
+    description: Production
+    production: true
